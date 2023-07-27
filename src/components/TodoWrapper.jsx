@@ -57,7 +57,7 @@ const TodoWrapper = () => {
       <h1>Get Things Done!</h1>
      <TodoForm addTodo={addTodo} validateError={validateError} />
 
-     {error && <p className="error">no puedes agregar una tarea vacía</p>}
+     {error && <p className="error">you can't add an empty task</p>}
 
      {todos.map(todo => (
       todo.isEditing 

@@ -98,13 +98,19 @@ h1 {
   color: #fff;
   text-align: center;
   font-size: 14px;
+  margin-bottom: 15px;
 }
 
-.btn-bottom{
+.delete-order-btn {
+  margin-top: 25px;
   display: flex;
   gap: 10px;
-  align-items: center;
-  justify-content: start;
+}
+
+.filter-btn {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .deleteAllTasks-btn {
@@ -120,7 +126,7 @@ h1 {
   background: #db1e1e;
 }
 
-.order-btn {
+.blue-btn {
   background: #315ec0;
   color: #fff;
   border: none;
@@ -129,6 +135,25 @@ h1 {
   cursor: pointer;
 }
 
-.order-btn:hover {
+.blue-btn:hover {
   background: #2751ac;
+}
+
+.selected {
+  background: #9b1dd5;
+  color: #fff;
+  border: none;
+  height: 100%;
+  padding: 0.55rem;
+}
+
+.p-no-tasks {
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .filter-btn button {
+    font-size: 12px;
+  }
 }
